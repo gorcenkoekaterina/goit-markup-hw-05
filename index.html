@@ -339,86 +339,78 @@
             
         </div>
 
-
-    </div>
     </footer>
 
-    <div class="backdrop is-open">
-        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-            <div class="container">
-                <button type="button" class="self-button" aria-label="Close modal">
-                    <svg class="icon_modal" width="8" height="8" aria-hidden="true">
-                        <use href="./images/icons.svg#icon-close"></use>
+    <div class="modal">
+        <button type="button" class="modal__close-btn">
+            <svg class="modal__close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    
+        <p class="modal__title">Leave your contacts and we will call you back</p>
+    
+        <form class="modal__form">
+            <!-- Name Field -->
+            <div class="form__field">
+                <label class="form__label" for="user-name">Name</label>
+                <div class="input__wrapper">
+                    <input class="form__input" id="user-name" name="user-name" type="text" required>
+                    <svg class="input__icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-person"></use>
                     </svg>
-                </button>
-                
-                <h2 id="modal-title" class="visually-hidden">Leave your contacts and we will call you back</h2>
-                <p class="modal__description">Leave your contacts and we will call you back</p>
-                
-                <form class="modal__form" action="#" method="post">
-                    <!-- Name Field -->
-                    <div class="form__group">
-                        <label class="form__label" for="user-name">Name</label>
-                        <div class="input__wrapper">
-                            <input class="form__input" id="user-name" name="user-name" type="text" required>
-                            <svg class="input__icon" width="18" height="24">
-                                <use href="./images/icons.svg#icon-person"></use>
-                            </svg>
-                        </div>
-                    </div>
-                
-                    <!-- Phone Field -->
-                    <div class="form__group">
-                        <label class="form__label" for="user-phone">Phone</label>
-                        <div class="input__wrapper">
-                            <input class="form__input" id="user-phone" name="phone" type="tel" required>
-                            <svg class="input__icon" width="18" height="24">
-                                <use href="./images/icons.svg#icon-phone"></use>
-                            </svg>
-                        </div>
-                    </div>
-                
-                    <!-- Email Field -->
-                    <div class="form__group">
-                        <label class="form__label" for="user-email">Email</label>
-                        <div class="input__wrapper">
-                            <input class="form__input" id="user-email" name="email" type="email" required>
-                            <svg class="input__icon" width="18" height="24">
-                                <use href="./images/icons.svg#icon-email"></use>
-                            </svg>
-                        </div>
-                    </div>
-                
-                    <!-- Comment Field -->
-                    <div class="form__group">
-                        <label class="form__label" for="user-comment">Comment</label>
-                        <textarea class="form__textarea" id="user-comment" name="user-comment" placeholder="Text input" rows="4"></textarea>
-                        </div>
-                        
-                        <!-- Checkbox Field -->
-                        <div class="form__checkbox-container">
-                            <input class="visually-hidden checkbox__input" type="checkbox" id="user-privacy" name="user-privacy" value="true"
-                                required>
-                            <label class="checkbox__label" for="user-privacy">
-                                <span class="checkbox__icon">
-                                    <svg class="checkbox__svg" width="10" height="8" viewBox="0 0 10 8">
-                                        <use href="./images/icons.svg#icon-check"></use>
-                                    </svg>
-                                </span>
-                                I accept the terms and conditions of the
-                                <a href="#" class="privacy__link">Privacy Policy</a>
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="form__submit-btn">
-                            Submit                 
-                        </button>  
-                </form>
-
-
+                </div>
             </div>
-        </div>
-    </div>
+    
+            <!-- Phone Field -->
+            <div class="form__field">
+                <label class="form__label" for="user-phone">Phone</label>
+                <div class="input__wrapper">
+                    <input class="form__input" id="user-phone" name="phone" type="tel" required>
+                    <svg class="input__icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </div>
+    
+            <!-- Email Field -->
+            <div class="form__field">
+                <label class="form__label" for="user-email">Email</label>
+                <div class="input__wrapper">
+                    <input class="form__input" id="user-email" name="email" type="email" required>
+                    <svg class="input__icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+    
+            <!-- Comment Field -->
+            <div class="form__field">
+                <label class="form__label" for="user-comment">Comment</label>
+                <textarea class="form__textarea" id="user-comment" name="user-comment" placeholder="Text input"
+                    rows="4"></textarea>
+            </div>
+    
+            <!-- Privacy Checkbox -->
+            <div class="form__privacy">
+                <input class="visually-hidden privacy__checkbox" type="checkbox" id="user-privacy" name="user-privacy"
+                    value="true" required>
+                <label class="privacy__label" for="user-privacy">
+                    <span class="privacy__icon">
+                        <svg class="privacy__check" width="10" height="8">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the
+                    <a href="#" class="privacy__link">Privacy Policy</a>
+                </label>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="form__submit-btn">
+                Submit
+            </button>
+        </form></div>
 </body>
 
 </html>
