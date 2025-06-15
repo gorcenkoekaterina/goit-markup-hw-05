@@ -615,6 +615,9 @@ img {
 }
 
 
+
+
+
 :root {
         --primary-text: #2E2F42;
         --secondary-text: #8e8f99;
@@ -726,6 +729,11 @@ img {
         margin-bottom: 8px;
 }
 
+.form__field--comment {
+        margin-bottom: 16px;
+        /* більший відступ для коментаря */   }
+
+
 .form__label {
         display: block;
         font-size: 12px;
@@ -819,10 +827,15 @@ img {
         cursor: pointer;
 }
 
-.spanprivasy {
-        display: inline-flex;
+.privacy__label {
+        display: inline-block;
 }
+
 .privacy__icon {
+        display: flex;   }
+
+.privacy__icon {
+        /* display: inline-flex */
         width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
