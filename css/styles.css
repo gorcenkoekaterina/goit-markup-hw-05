@@ -723,7 +723,7 @@ img {
 
 
 .form__field {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
 }
 
 .form__label {
@@ -819,8 +819,10 @@ img {
         cursor: pointer;
 }
 
-.privacy__icon {
+.spanprivasy {
         display: inline-flex;
+}
+.privacy__icon {
         width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
