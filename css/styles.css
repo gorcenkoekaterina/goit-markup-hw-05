@@ -476,7 +476,6 @@ img {
 .footer-container {
         display: flex;
         align-items: baseline;
-        /* Успадковує всі властивості .container */
 }
 
 .footer-branding {
@@ -551,8 +550,7 @@ img {
 
 .footer-form {
         margin-top: 80px;
-        
-}
+} 
 
 .footer-form-text {
         margin-bottom: 16px;
@@ -562,6 +560,7 @@ img {
         letter-spacing: 0.02em;
         color: #ffffff;
 }
+
 
 .form-foot {
         display: flex;
@@ -803,6 +802,7 @@ img {
 
 .form__privacy {
         margin-bottom: 24px;
+        display: flex;
 }
 
 .privacy__checkbox {
@@ -827,15 +827,8 @@ img {
         cursor: pointer;
 }
 
-.privacy__label {
-        display: inline-block;
-}
-
 .privacy__icon {
-        display: flex;   }
-
-.privacy__icon {
-        /* display: inline-flex */
+        display: inline-flex;
         width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
