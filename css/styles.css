@@ -828,6 +828,10 @@ img {
         cursor: pointer;
 }
 
+.iconns {
+        display: inline-flex;
+}
+
 .privacy__icon {
         display: inline-flex;
         width: 16px;
