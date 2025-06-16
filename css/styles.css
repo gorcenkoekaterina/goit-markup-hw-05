@@ -806,7 +806,8 @@ img {
 }
 
 .privacy__checkbox {
-        position: absolute;
+        display: flex;
+        /* position: absolute; */
         width: 1px;
         height: 1px;
         margin: -1px;
