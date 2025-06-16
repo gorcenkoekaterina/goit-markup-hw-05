@@ -806,8 +806,7 @@ img {
 }
 
 .privacy__checkbox {
-        display: flex;
-        /* position: absolute; */
+        position: absolute;
         width: 1px;
         height: 1px;
         margin: -1px;
@@ -818,7 +817,6 @@ img {
 }
 
 .privacy__label {
-        display: inline-flex;
         align-items: center;
         gap: 8px;
         font-size: 12px;
@@ -828,9 +826,6 @@ img {
         cursor: pointer;
 }
 
-.iconns {
-        display: inline-flex;
-}
 
 .privacy__icon {
         display: inline-flex;
