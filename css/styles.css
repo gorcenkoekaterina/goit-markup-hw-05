@@ -480,8 +480,6 @@ img {
         /* Додано відступ 80px між блоками */     }
 
 .footer-branding {
-        flex: 0 0 auto;
-         /* Забороняє стягування */
         min-width: 264px;
         /* Мінімальна ширина як у макеті */
         margin-right: 120px;             }
@@ -555,6 +553,7 @@ img {
 
 .footer-form {
         margin-top: 80px;
+        margin-right: 0;
 } 
 
 .footer-form-text {
